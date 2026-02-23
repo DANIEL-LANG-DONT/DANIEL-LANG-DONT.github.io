@@ -1,0 +1,51 @@
+/* Fondo azul */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.fondo {
+  background: #454546; /* gris */
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Recuadro central */
+.recuadro {
+  background: white;
+  padding: 30px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.recuadro h2 {
+  margin-top: 0;
+  color: #0a3cff;
+}
+
+.recuadro p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.recuadro button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #0a3cff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.recuadro button:hover {
+  background: #062bbf;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frutella</title>
+
+<style>
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    width: 400px;
+    text-align: center;
+}
+
+.boton {
+    background-color: #454546;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.contenido {
+    display: none;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="boton" onclick="mostrar(1)">Frutella</div>
+    <div id="contenido1" class="contenido">
+        🍪 1. ¿Qué son las galletas Frutella?
+
+Las galletas Frutella son básicamente galletas con chispas de chocolate (chocolate chip cookies), 
+suaves por dentro y con trozos de chocolate derretido por fuera — muy parecidas a las clásicas 
+americanas.
+    </div>
+
+    <div class="boton" onclick="mostrar(2)">Precio</div>
+    <div id="contenido2" class="contenido">
+        💸 4. Aproximación de costos
+
+El costo puede variar bastante según el país y la marca, pero te doy una idea general:
+
+💰 Costo por batch (≈20–24 galletas):
+
+Harina + azúcar + mantequilla + chocolate: unos $2.30–$8.00 USD aprox. (según marcas y calidad)
+
+Si haces ~24 galletas, el costo por unidad podría ser muy bajo (~0.10–0.35 USD) si compras ingredientes por cantidad.
+
+💡 Precio de venta sugerido:
+
+Para vender, muchas panaderías aplican margen de ganancia, normalmente entre 30–100 % del costo total dependiendo del mercado y presentación.
+    </div>
+
+    <div class="boton" onclick="mostrar(3)">Recomendaciones</div>
+    <div id="contenido3" class="contenido">
+        💡 Recomendaciones para que salgan perfectas
+
+✔️ Refrigera la masa antes de hornear (20–40 min) para que no se expandan demasiado.
+✔️ Deja espacio entre cada galleta en la bandeja para que se cocinen bien.
+✔️ Si te gusta el interior bien suave, retíralas justo antes de que los centros se vean totalmente cocidos.
+✔️ Añadir un poco de sal en escamas por encima resalta el sabor del chocolate.
+    </div>
+
+</div>
+
+<script>
+function mostrar(numero) {
+    const contenido = document.getElementById("contenido" + numero);
+
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+    } else {
+        contenido.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
